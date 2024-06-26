@@ -28,7 +28,7 @@ window.onscroll = () => {
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Previene el envío por defecto del formulario
 
-    // Obtén los IDs del servicio y la plantilla de EmailJS
+    // Obtienes los IDs del servicio y la plantilla de EmailJS
     const serviceID = 'service_9cwb92x';
     const templateID = 'template_dartbjr';
 
@@ -43,6 +43,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x'); // Asegúrate de que este sea el nombre de la clase correcta
+    menuIcon.classList.toggle('bx-x'); // tiene que ser el nombre de la clase correcta
     navbar.classList.toggle('active');
 }
