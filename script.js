@@ -35,10 +35,13 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Envía el formulario usando EmailJS
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
-            alert('Mensaje enviado con éxito!');
-        }, (err) => {
-            alert('Error al enviar el mensaje: ' + JSON.stringify(err));
-        });
+            msg.innerHTML = "Mensaje enviado correctamente"
+            setTimeout(function() {
+                msg.innerHTML = "";
+            }, 4000)
+            
+        })
+        .catch(error => console.error('Error!',error,mensaje))
 });
 
 

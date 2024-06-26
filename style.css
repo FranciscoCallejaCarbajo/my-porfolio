@@ -679,6 +679,13 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+.center-grid {
+    display: grid;
+    place-items: center;
+}
+#msg {
+    font-size: 15px;
+}
 
 
 .footer{
@@ -779,6 +786,7 @@ span{
     .contact form{
         flex-direction: column;
     }
+    
     .footer{
         padding: 2rem 3%;
     }
