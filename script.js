@@ -19,6 +19,29 @@ window.onscroll = () => {
     });
 }
 
+// Inicializa EmailJS con tu User ID
+(function() {
+    emailjs.init('oLum-jTU3CTFkIdJe');
+})();
+
+// Maneja el envío del formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el envío por defecto del formulario
+
+    // Obtén los IDs del servicio y la plantilla de EmailJS
+    const serviceID = 'service_9cwb92x';
+    const templateID = 'template_dartbjr';
+
+    // Envía el formulario usando EmailJS
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert('Mensaje enviado con éxito!');
+        }, (err) => {
+            alert('Error al enviar el mensaje: ' + JSON.stringify(err));
+        });
+});
+
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x'); // Asegúrate de que este sea el nombre de la clase correcta
     navbar.classList.toggle('active');
