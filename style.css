@@ -570,7 +570,7 @@ span {
 }
 
 .skills .container {
-    background: var(--main-color);
+    background: linear-gradient(#00ff95, #013f25);
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
@@ -727,6 +727,11 @@ span {
 }
 
 /* Responsive adjustments */
+@media (min-width: 1285px) and (max-width: 1900px) {
+    .home-img{
+        width: 450px;
+    }
+}
 @media (max-width: 1285px) {
     html {
         font-size: 55%;
@@ -752,9 +757,9 @@ span {
         font-size: 3rem;
     }
 
-    .home-img img {
+    /* .home-img img {
         width: 70vw;
-    }
+    } */
 
     .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
@@ -806,9 +811,9 @@ span {
         font-size: 2.6rem;
     }
 
-    .home-img img {
+    /* .home-img img {
         width: 90vw;
-    }
+    } */
 
     .timeline-item::before {
         left: 7px;
@@ -868,9 +873,9 @@ span {
         margin: 0 auto;
     }
 
-    .home-img img {
+    /* .home-img img {
         width: 70vw;
-    }
+    } */
 
     .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
